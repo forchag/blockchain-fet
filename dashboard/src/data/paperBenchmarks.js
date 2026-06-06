@@ -1,0 +1,118 @@
+export const paperBenchmarks = {
+  deployment: {
+    sensor_count: 50,
+    sensor_model: 'ESP32-WROOM-32',
+    gateway_count: 4,
+    gateway_model: 'Raspberry Pi 4B',
+    fabric_peers: 4,
+    raft_orderers: 3,
+    fabric_ca_count: 1,
+    fabric_total_nodes: 8,
+    deployment_duration_days: 61,
+    deployment_start: '2025-08-01',
+    deployment_end: '2025-09-30',
+    farm_area_ha: 2,
+    farm_dimensions: '200m x 100m',
+    farm_location_name: 'Sfax, Tunisia',
+    farm_latitude: 34.74,
+    farm_longitude: 10.76,
+    system_uptime_percent: 99.4,
+    connectivity_outages: 3,
+    connectivity_outage_duration_range_hours: '6-18',
+  },
+  transactions: {
+    sensor_write_transactions: 146400,
+    total_transactions_approx: 209000,
+    duty_cycle_minutes: 30,
+    peak_observed_tps: 50,
+  },
+  throughput: {
+    concurrent_clients: 50,
+    hrbac_tps: 63,
+    baseline_tps: 69,
+    rbac_overhead_percent: 8.7,
+    expected_hrbac_tps_min: 55,
+    expected_hrbac_tps_max: 70,
+  },
+  latency: {
+    rbac_overhead_sensor_write_ms: 320,
+    sensor_write_total_latency_ms: 1220,
+    p95_latency_4_peers_ms: 1480,
+    p95_latency_32_peers_ms: 855,
+    expected_sensor_write_p95_max_ms: 2000,
+  },
+  security: {
+    security_test_attempts: 8000,
+    security_vectors: 8,
+    attempts_per_vector: 1000,
+    block_rate_percent: 100,
+    day_34_blocked_attempts: 47,
+  },
+  revocation: {
+    crl_publication_time_seconds: 60,
+    crl_gossip_propagation_minutes: 4.2,
+    crl_schedule_hours: 24,
+    policy_cache_ttl_seconds: 300,
+    nonce_retention_days: 90,
+  },
+  energy: {
+    single_channel_energy_mj: 24.21,
+    crt_energy_mj: 12.40,
+    energy_reduction_percent: 48.8,
+    sensor_lifetime_days: 774,
+    sensor_lifetime_years: 2.1,
+  },
+  crypto_timing: {
+    sha256_hardware_time_us: 12,
+    sha256_hardware_sd_us: 1,
+    efuse_key_read_time_us: 8,
+    efuse_key_read_sd_us: 0,
+    ed25519_sign_time_us: 860,
+    ed25519_sign_sd_us: 9,
+    key_context_time_us: 20,
+    key_context_sd_us: 1,
+    total_signing_time_us: 900,
+    total_signing_sd_us: 9,
+  },
+  lora: {
+    lora_sf: 'SF7',
+    lora_bandwidth_khz: 125,
+    lora_coding_rate: '4/5',
+    lora_airtime_4b_payload_ms: 36.1,
+    lora_airtime_1b_residue_ms: 31.5,
+    lora_channel_0_mhz: '868.100',
+    lora_channel_1_mhz: '868.300',
+    lora_channel_2_mhz: '868.500',
+  },
+  formal_verification: {
+    tla_states_explored: 5184,
+    tla_model_diameter: 22,
+    tla_runtime_seconds: 14,
+    tla_cpu: '2.7GHz i7',
+  },
+  certificates: {
+    admin_cert_validity_years: 2,
+    gateway_cert_validity_years: 1,
+    sensor_cert_validity_months: 6,
+    zone_oid: '1.3.6.1.4.1.54392.1.2',
+  },
+  crt: {
+    crt_moduli: [97, 101, 103],
+    crt_max_value: 1009091,
+  },
+};
+
+export function getBenchmarkCategory(category) {
+  return paperBenchmarks[category] ?? null;
+}
+
+export function getMetric(metricName) {
+  for (const metrics of Object.values(paperBenchmarks)) {
+    if (Object.prototype.hasOwnProperty.call(metrics, metricName)) {
+      return metrics[metricName];
+    }
+  }
+  return null;
+}
+
+export default paperBenchmarks;

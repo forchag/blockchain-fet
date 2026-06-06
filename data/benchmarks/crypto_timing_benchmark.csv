@@ -1,0 +1,6 @@
+operation,mean,sd,unit,paper_location
+sha256_hardware,12,1,us,Paper constants appendix
+efuse_key_read,8,0,us,Paper constants appendix
+ed25519_sign,860,9,us,Paper constants appendix
+key_context,20,1,us,Paper constants appendix
+total_signing,900,9,us,Paper constants appendix

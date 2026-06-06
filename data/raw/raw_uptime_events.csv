@@ -1,0 +1,5 @@
+start_time,end_time,event_type,duration_hours,affected_component,notes
+2025-08-01T00:00:00Z,2025-09-30T23:59:59Z,DEPLOYMENT,1464.0,ALL,Full deployment period
+2025-08-13T00:00:00Z,2025-08-13T08:41:59Z,CONNECTIVITY_OUTAGE,8.7,gw-north-01,"LoRa link failure, delayed sync on recovery"
+2025-08-29T00:00:00Z,2025-08-29T00:24:00Z,CONNECTIVITY_OUTAGE,0.4,gw-east-01,"Brief power fluctuation, buffered data re-synced"
+2025-09-17T00:00:00Z,2025-09-17T00:12:00Z,CONNECTIVITY_OUTAGE,0.2,gw-south-01,"Firmware watchdog reset, no data loss"

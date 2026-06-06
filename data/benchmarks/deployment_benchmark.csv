@@ -1,0 +1,38 @@
+metric,value,unit,paper_location
+sensor_count,50,sensors,Paper constants appendix
+sensor_model,ESP32-WROOM-32,,Paper constants appendix
+gateway_count,4,gateways,Paper constants appendix
+gateway_model,Raspberry Pi 4B,,Paper constants appendix
+fabric_peers,4,peers,Paper constants appendix
+raft_orderers,3,orderers,Paper constants appendix
+fabric_ca_count,1,certificate authorities,Paper constants appendix
+fabric_total_nodes,8,nodes,Paper constants appendix
+deployment_duration_days,61,days,Paper constants appendix
+deployment_start,2025-08-01,,Paper constants appendix
+deployment_end,2025-09-30,,Paper constants appendix
+farm_area_ha,2,ha,Paper constants appendix
+farm_dimensions,200m x 100m,,Paper constants appendix
+farm_location_name,"Sfax, Tunisia",,Paper constants appendix
+farm_latitude,34.74,degrees,Paper constants appendix
+farm_longitude,10.76,degrees,Paper constants appendix
+system_uptime_percent,99.4,percent,Paper constants appendix
+connectivity_outages,3,outages,Paper constants appendix
+connectivity_outage_duration_range_hours,6-18,hours,Paper constants appendix
+sensor_write_transactions,146400,transactions,Paper constants appendix
+total_transactions_approx,209000,transactions,Paper constants appendix
+duty_cycle_minutes,30,minutes,Paper constants appendix
+peak_observed_tps,50,TPS,Paper constants appendix
+lora_sf,SF7,,Paper constants appendix
+lora_bandwidth_khz,125,,Paper constants appendix
+lora_coding_rate,4/5,,Paper constants appendix
+lora_airtime_4b_payload_ms,36.1,,Paper constants appendix
+lora_airtime_1b_residue_ms,31.5,,Paper constants appendix
+lora_channel_0_mhz,868.100,,Paper constants appendix
+lora_channel_1_mhz,868.300,,Paper constants appendix
+lora_channel_2_mhz,868.500,,Paper constants appendix
+admin_cert_validity_years,2,,Paper constants appendix
+gateway_cert_validity_years,1,,Paper constants appendix
+sensor_cert_validity_months,6,,Paper constants appendix
+zone_oid,1.3.6.1.4.1.54392.1.2,,Paper constants appendix
+crt_moduli,97;101;103,,Paper constants appendix
+crt_max_value,1009091,,Paper constants appendix

@@ -1,0 +1,2 @@
+benchmark_type,concurrent_clients,hrbac_tps,baseline_tps,overhead_percent,paper_location
+HRBAC vs baseline throughput,50,63,69,8.7,Paper constants appendix

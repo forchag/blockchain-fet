@@ -1,0 +1,84 @@
+version: '3.8'
+
+networks:
+  farm-network:
+    name: farm-network
+    external: true
+
+x-orderer-base: &orderer-base
+  image: hyperledger/fabric-orderer:2.5.6
+  platform: linux/arm64
+  environment: &orderer-env
+    FABRIC_LOGGING_SPEC: INFO
+    ORDERER_GENERAL_LISTENADDRESS: 0.0.0.0
+    ORDERER_GENERAL_BOOTSTRAPMETHOD: file
+    ORDERER_GENERAL_BOOTSTRAPFILE: /var/hyperledger/orderer/genesis.block
+    ORDERER_GENERAL_LOCALMSPID: FarmMSP
+    ORDERER_GENERAL_LOCALMSPDIR: /var/hyperledger/orderer/msp
+    ORDERER_GENERAL_TLS_ENABLED: 'true'
+    ORDERER_GENERAL_TLS_PRIVATEKEY: /var/hyperledger/orderer/tls/server.key
+    ORDERER_GENERAL_TLS_CERTIFICATE: /var/hyperledger/orderer/tls/server.crt
+    ORDERER_GENERAL_TLS_ROOTCAS: '[/var/hyperledger/orderer/tls/ca.crt]'
+    ORDERER_GENERAL_CLUSTER_CLIENTCERTIFICATE: /var/hyperledger/orderer/tls/server.crt
+    ORDERER_GENERAL_CLUSTER_CLIENTPRIVATEKEY: /var/hyperledger/orderer/tls/server.key
+    ORDERER_GENERAL_CLUSTER_ROOTCAS: '[/var/hyperledger/orderer/tls/ca.crt]'
+    ORDERER_OPERATIONS_LISTENADDRESS: 0.0.0.0:9443
+    ORDERER_METRICS_PROVIDER: disabled
+    GODEBUG: netdns=go
+    GOMAXPROCS: '2'
+  working_dir: /root
+  command: orderer
+  networks:
+    - farm-network
+
+services:
+  orderer0.farm.tn:
+    <<: *orderer-base
+    container_name: orderer0.farm.tn
+    hostname: orderer0.farm.tn
+    environment:
+      <<: *orderer-env
+      ORDERER_GENERAL_LISTENPORT: 7050
+    ports:
+      - '7050:7050'
+      - '17050:9443'
+    volumes:
+      - ./system-genesis-block/genesis.block:/var/hyperledger/orderer/genesis.block:ro
+      - ./crypto-config/ordererOrganizations/farm.tn/orderers/orderer0.farm.tn/msp:/var/hyperledger/orderer/msp:ro
+      - ./crypto-config/ordererOrganizations/farm.tn/orderers/orderer0.farm.tn/tls:/var/hyperledger/orderer/tls:ro
+      - orderer0.farm.tn:/var/hyperledger/production/orderer
+  orderer1.farm.tn:
+    <<: *orderer-base
+    container_name: orderer1.farm.tn
+    hostname: orderer1.farm.tn
+    environment:
+      <<: *orderer-env
+      ORDERER_GENERAL_LISTENPORT: 8050
+    ports:
+      - '8050:8050'
+      - '18050:9443'
+    volumes:
+      - ./system-genesis-block/genesis.block:/var/hyperledger/orderer/genesis.block:ro
+      - ./crypto-config/ordererOrganizations/farm.tn/orderers/orderer1.farm.tn/msp:/var/hyperledger/orderer/msp:ro
+      - ./crypto-config/ordererOrganizations/farm.tn/orderers/orderer1.farm.tn/tls:/var/hyperledger/orderer/tls:ro
+      - orderer1.farm.tn:/var/hyperledger/production/orderer
+  orderer2.farm.tn:
+    <<: *orderer-base
+    container_name: orderer2.farm.tn
+    hostname: orderer2.farm.tn
+    environment:
+      <<: *orderer-env
+      ORDERER_GENERAL_LISTENPORT: 9050
+    ports:
+      - '9050:9050'
+      - '19050:9443'
+    volumes:
+      - ./system-genesis-block/genesis.block:/var/hyperledger/orderer/genesis.block:ro
+      - ./crypto-config/ordererOrganizations/farm.tn/orderers/orderer2.farm.tn/msp:/var/hyperledger/orderer/msp:ro
+      - ./crypto-config/ordererOrganizations/farm.tn/orderers/orderer2.farm.tn/tls:/var/hyperledger/orderer/tls:ro
+      - orderer2.farm.tn:/var/hyperledger/production/orderer
+
+volumes:
+  orderer0.farm.tn:
+  orderer1.farm.tn:
+  orderer2.farm.tn:

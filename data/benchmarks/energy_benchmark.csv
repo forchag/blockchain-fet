@@ -1,0 +1,6 @@
+metric,value,unit,paper_location
+single_channel_energy_mj,24.21,mJ,Paper constants appendix
+crt_energy_mj,12.4,mJ,Paper constants appendix
+energy_reduction_percent,48.8,percent,Paper constants appendix
+sensor_lifetime_days,774,days,Paper constants appendix
+sensor_lifetime_years,2.1,years,Paper constants appendix

@@ -1,0 +1,72 @@
+peer:
+  id: peer0.north.farm.tn
+  networkId: farm-network
+  listenAddress: 0.0.0.0:7051
+  address: peer0.north.farm.tn:7051
+  addressAutoDetect: false
+  gateway:
+    enabled: true
+  keepalive:
+    minInterval: 60s
+    client:
+      interval: 60s
+      timeout: 20s
+    deliveryClient:
+      interval: 60s
+      timeout: 20s
+  gossip:
+    bootstrap: peer0.north.farm.tn:7051
+    useLeaderElection: true
+    orgLeader: false
+    endpoint: peer0.north.farm.tn:7051
+  tls:
+    enabled: true
+    cert:
+      file: /etc/hyperledger/fabric/tls/server.crt
+    key:
+      file: /etc/hyperledger/fabric/tls/server.key
+    rootcert:
+      file: /etc/hyperledger/fabric/tls/ca.crt
+  fileSystemPath: /var/hyperledger/production
+  BCCSP:
+    Default: SW
+    SW:
+      Hash: SHA2
+      Security: 256
+      FileKeyStore:
+        KeyStore: /etc/hyperledger/fabric/msp/keystore
+ledger:
+  state:
+    stateDatabase: CouchDB
+    couchDBConfig:
+      couchDBAddress: couchdb:5984
+      username: ${COUCHDB_USER:-farm}
+      password: ${COUCHDB_PASSWORD:-farmcouchpw}
+      maxRetries: 3
+      requestTimeout: 35s
+  history:
+    enableHistoryDatabase: true
+chaincode:
+  externalBuilders: []
+  installTimeout: 300s
+  startuptimeout: 300s
+  executetimeout: 30s
+  builder: $(DOCKER_NS)/fabric-ccenv:$(TWO_DIGIT_VERSION)
+  pull: false
+  golang:
+    runtime: $(DOCKER_NS)/fabric-baseos:$(TWO_DIGIT_VERSION)
+  java:
+    runtime: $(DOCKER_NS)/fabric-javaenv:$(TWO_DIGIT_VERSION)
+  node:
+    runtime: $(DOCKER_NS)/fabric-nodeenv:$(TWO_DIGIT_VERSION)
+vm:
+  endpoint: unix:///host/var/run/docker.sock
+  docker:
+    hostConfig:
+      NetworkMode: farm-network
+      Memory: 1073741824
+      NanoCPUs: 1000000000
+operations:
+  listenAddress: 0.0.0.0:9443
+metrics:
+  provider: disabled

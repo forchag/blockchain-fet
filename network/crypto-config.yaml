@@ -1,0 +1,46 @@
+OrdererOrgs:
+  - Name: FarmOrderer
+    Domain: farm.tn
+    EnableNodeOUs: true
+    Specs:
+      - Hostname: orderer0
+        SANS:
+          - localhost
+          - orderer0.farm.tn
+      - Hostname: orderer1
+        SANS:
+          - localhost
+          - orderer1.farm.tn
+      - Hostname: orderer2
+        SANS:
+          - localhost
+          - orderer2.farm.tn
+PeerOrgs:
+  - Name: Farm
+    Domain: farm.tn
+    EnableNodeOUs: true
+    Template:
+      Count: 0
+    Users:
+      Count: 0
+    Specs:
+      - Hostname: peer0.north
+        CommonName: peer0.north.farm.tn
+        SANS:
+          - localhost
+          - peer0.north.farm.tn
+      - Hostname: peer0.south
+        CommonName: peer0.south.farm.tn
+        SANS:
+          - localhost
+          - peer0.south.farm.tn
+      - Hostname: peer0.east
+        CommonName: peer0.east.farm.tn
+        SANS:
+          - localhost
+          - peer0.east.farm.tn
+      - Hostname: peer0.west
+        CommonName: peer0.west.farm.tn
+        SANS:
+          - localhost
+          - peer0.west.farm.tn

@@ -1,0 +1,6 @@
+metric,value,unit,paper_location
+rbac_overhead_sensor_write_ms,320,ms,Paper constants appendix
+sensor_write_total_latency_ms,1220,ms,Paper constants appendix
+p95_latency_4_peers_ms,1480,ms,Paper constants appendix
+p95_latency_32_peers_ms,855,ms,Paper constants appendix
+expected_sensor_write_p95_max_ms,2000,ms,Paper constants appendix

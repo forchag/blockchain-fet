@@ -1,0 +1,14 @@
+# Build outputs
+chaincode/hrbac/hrbac
+
+# Python cache/test artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Performance dry-run outputs
+results/*.csv
+
+# Node dependencies/build artifacts
+node_modules/
+dist/

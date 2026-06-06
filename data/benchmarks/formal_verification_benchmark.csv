@@ -1,0 +1,5 @@
+metric,value,unit,paper_location
+tla_states_explored,5184,states,Paper constants appendix
+tla_model_diameter,22,transitions,Paper constants appendix
+tla_runtime_seconds,14,seconds,Paper constants appendix
+tla_cpu,2.7GHz i7,,Paper constants appendix

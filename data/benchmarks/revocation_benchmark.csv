@@ -1,0 +1,6 @@
+metric,value,unit,paper_location
+crl_publication_time_seconds,60,seconds,Paper constants appendix
+crl_gossip_propagation_minutes,4.2,minutes,Paper constants appendix
+crl_schedule_hours,24,hours,Paper constants appendix
+policy_cache_ttl_seconds,300,seconds,Paper constants appendix
+nonce_retention_days,90,days,Paper constants appendix

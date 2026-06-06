@@ -1,0 +1,6 @@
+metric,value,unit,paper_location
+security_test_attempts,8000,attempts,Paper constants appendix
+security_vectors,8,vectors,Paper constants appendix
+attempts_per_vector,1000,attempts/vector,Paper constants appendix
+block_rate_percent,100,percent,Paper constants appendix
+day_34_blocked_attempts,47,attempts,Paper constants appendix
