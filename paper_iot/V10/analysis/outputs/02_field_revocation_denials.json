@@ -1,0 +1,9 @@
+{
+  "deny_reason_counts": {
+    "REVOKED_CREDENTIAL": 973
+  },
+  "field_revocation_denial_count": 973,
+  "per_day_mean": 17.07017543859649,
+  "span_days": 57,
+  "unique_callers": 132
+}

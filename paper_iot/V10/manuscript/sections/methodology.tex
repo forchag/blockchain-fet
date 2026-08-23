@@ -1,0 +1,69 @@
+\section{Measurement methodology}
+\label{sec:methodology}
+
+\subsection{Site and workload}
+
+The system ran continuously for \DeploymentDays{} days on an experimental farm, from 1 August to 30 September 2025. Table~\ref{tab:deployment-config} gives the configuration. Each sensor reported on a 30-minute duty cycle (48 writes/day per sensor), giving \SensorReadings{} sensor writes over the deployment across \Sensors{} sensors; human and administrative traffic (farmer and agronomist queries, certifier audits, supply-chain reads, role operations) brings the total to \AuthDecisions{} recorded authorization decisions, of which \OrdinaryDenials{} (\OrdinaryDenialPct\%) were ordinary-operation denials.
+
+\begin{table}[H]
+\centering
+\caption{Deployment configuration and observed totals, recomputed from \texttt{raw/field/*.csv}.}
+\label{tab:deployment-config}
+\small
+\begin{tabular}{ll}
+\toprule
+Parameter & Value \\
+\midrule
+Duration & \DeploymentDays{} days, 1 Aug to 30 Sep 2025 \\
+Zones & \Zones{} \\
+Sensor nodes & \Sensors{} ESP32-WROOM-32 \\
+Gateways & \Gateways{} Raspberry Pi 4B (4\,GB, TPM 2.0) \\
+Fabric peers & \Gateways{} (one per zone) \\
+Ordering service & 3 Raft orderers, $f{=}1$ \\
+State database & CouchDB 3.2 \\
+Sensor duty cycle & 30 min \\
+Sensor writes & \SensorReadings{} \\
+Authorization decisions & \AuthDecisions{} \\
+Decision-path uptime & \DecisionPathUptime\% \\
+Connectivity outages & \OutageCount{} (\OutageMinHours--\OutageMaxHours{} h, \OutageTotalHours{} h total) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Analyst raw-data package and provenance}
+\label{sec:analyst-data}
+
+This version is built from a raw-data package supplied separately from the manuscript source, organised as \texttt{raw/field/} (61-day deployment observations), \texttt{raw/experiments/} (controlled peer-multiplicity, throughput, energy and cryptographic-timing campaigns), \texttt{raw/security/} (scripted authorization-boundary attempts) and \texttt{raw/provenance/} (per-device and per-gateway JSON-lines logs and a sample of Fabric ledger blocks, corroborating the field CSVs at the transaction level). The full inventory, per-file SHA-256 hashes, and a provenance classification for every file are in \texttt{analysis/ANALYST\_DATA\_INVENTORY.md} and \texttt{analysis/DATA\_PROVENANCE\_REPORT.md}. Every number in this manuscript is produced by the numbered scripts in \texttt{analysis/scripts/}, run end to end by \texttt{analysis/scripts/run\_all.sh} directly against this package; none is transcribed from an earlier draft or hand-typed. \texttt{analysis/CLAIM\_DATA\_MAP.csv} lists, claim by claim, which of an earlier draft's reported values this package reproduces exactly, which it reproduces within rounding, and which it corrects; \texttt{V10\_CHANGELOG.md} narrates the corrections.
+
+A repository already contained a differently structured \texttt{data/raw/} directory and a \texttt{data/benchmarks/paper\_benchmark\_summary.json} file predating this analysis, self-described as ``measured, not synthesised.'' Row-level inspection (matching identifiers, decision-value vocabulary, and a validation file that checks its own numbers against a manuscript's reported values rather than against an independent ground truth) found no evidence these files are field measurements; \texttt{analysis/DATA\_DISCREPANCIES.md} documents the comparison. They are left untouched in the repository (this study does not reorganise unrelated directories) and are not used as a source for any number in this article.
+
+\subsection{Peer-scaling topology}
+\label{sec:peer-topology}
+
+Section~\ref{sec:results-peer-scaling} varies configured logical peer count, not physical capacity: increasing configured peers does not automatically reduce Fabric latency, since the effect depends on the endorsement policy, endorser selection, connection pooling, proposal fan-out, and peer CPU and state-database load. Only the 4-peer configuration is the physically deployed network of Table~\ref{tab:deployment-config}, one peer per zone on its own Raspberry Pi; the 8-, 16- and 32-peer configurations run additional logical peers on the same four physical hosts (\texttt{raw/experiments/peer\_scaling\_runs.csv} records a single \texttt{host\_id} for all \PeerRunsTotal{} runs), oversubscribed rather than added, so the comparison isolates endorser multiplicity under a fixed endorsement policy, not physical capacity.
+
+A run is one complete live workload execution at a fixed peer count: \PeerTxPerRun{} measured transactions per run, confirmed identical across all \PeerRunsTotal{} runs in the released manifest. The run identifiers (\texttt{PEER-<peers>-R<repetition>}) and start timestamps in \texttt{peer\_scaling\_runs.csv} let us reconstruct the counterbalancing schedule directly: repetitions 1--4 execute peer counts $\{4,8,16,32\}$ in one cyclic order and repetitions 5--8 execute them in a second, complementary cyclic order, so that every peer count occupies every position-within-repetition exactly twice -- the two complementary $4\times4$ Latin-square cycles this design claims, confirmed against the manifest rather than assumed. We treat the repetition number as the counterbalancing block and the run as the experimental unit; individual transactions within a run are not treated as independent replicates.
+
+\subsection{Instrumentation}
+
+Latency is measured at the gateway between submission and commit notification (endorsement through commitment, excluding only the LoRa hop); throughput is committed transactions per measurement window; energy uses a single-node bench instrument sampling at rates consistent with the released \texttt{airtime\_ms} and \texttt{energy\_mj} columns (\texttt{raw/experiments/energy\_measurements.csv}). The baseline for overhead attribution (Section~\ref{sec:results-throughput}) is the identical network, workload and hardware with the access-control chaincode removed, so the difference estimates the cost of the complete access-control-enabled path, not an isolated permission decision.
+
+\subsection{Statistical treatment}
+\label{sec:stats-treatment}
+
+Transactions generated in the same run, day or gateway are correlated, and treating each as an independent replicate would produce standard errors far smaller than the design supports. Every controlled-campaign comparison in this article therefore uses the live run as the experimental unit: \PeerRunsPerConfig{} runs per peer-count configuration, 5 runs per throughput cell.
+
+Group comparisons use Welch's $t$-test or a paired $t$-test where runs are naturally paired by counterbalancing block, reported with the mean difference, its 95\% confidence interval and, where appropriate, Cohen's $d$. Where an order effect is a live concern, a joint regression on the relevant factors is used instead of a simple group comparison, so the factor of interest and run order are estimated jointly rather than one being assumed away by design alone (Section~\ref{sec:results-peer-scaling}). A separate block-design model (outcome $\sim$ peer count + block + serial position, block being the counterbalancing repetition confirmed in Section~\ref{sec:peer-topology}) is reported alongside the joint regression for robustness.
+
+The peer-scaling campaign used one continuously running experimental session (\texttt{session\_id = peer-scaling-2025-10} for every run) and the throughput campaign used a second, separate single session (\texttt{throughput-2025-10}); the ten throughput concurrency levels were tested in one fixed ascending order within that session, so campaign-wide sequence number is almost collinear with concurrency (Pearson $r = \ThroughputCampaignSeqCorr$) and cannot serve as an independent order covariate. Only the two throughput conditions were interleaved within each concurrency cell; the within-cell position term is orthogonal to concurrency by construction and can detect a warming or ledger-growth trend within a cell, but not a trend across the session's fixed level order. Both campaigns are single-session; we do not claim session-to-session generality was tested (Limitations L2, L3, Section~\ref{sec:limitations}).
+
+Confidence intervals on means use the Student-$t$ interval for the run-level group statistics reported here (all controlled-campaign groups have $n = 5$ or $n = 8$ runs, so a percentile bootstrap over whole runs is additionally reported alongside the analytic interval, never over individual transactions). The ten throughput comparisons are corrected for multiplicity with Holm--Bonferroni. Equivalence claims for the recorded-span 4-versus-32-peer comparison use two one-sided tests (TOST) against a $\pm$10\,ms margin selected after inspecting the data, not preregistered, and reported as exploratory throughout; that margin is about 3\% of the recorded span.
+
+\subsection{Code-to-specification audit}
+\label{sec:audit-method}
+
+We conducted a structured cross-layer audit of the historical chaincode, gateway and firmware against the authorization requirements, encoding bounds and documented message format, reading the actual source files in this repository (\texttt{chaincode/hrbac/roles.go}, \texttt{contract.go}; \texttt{gateway/gateway.py}; \texttt{esp32/main/signing.c}, \texttt{crt\_encode.c}, \texttt{crt\_encode.h}, \texttt{main.c}) rather than the earlier draft's prose description of them. The audit compared: (i) the stated role--permission matrix with effective permissions computed from \texttt{roles.go}; (ii) the legal encoder input domain with the minimum pairwise CRT recovery range, recomputed from the released engineering-unit columns under the encoding in \texttt{main.c}; (iii) firmware signing bytes with gateway verification bytes, read directly from \texttt{signing.c} and \texttt{gateway.py}; and (iv) the revocation information required for episode-level exposure with the fields present in the trace. Each discrepancy is reported with a file and function reference so it can be checked independently of this manuscript. The audit was not a complete source-code security review and does not establish the absence of other defects.
+
+\subsection{Reproducibility}
+
+Every number, table and figure in this article is generated from the released traces by the scripts in \texttt{paper\_iot/V10/analysis/scripts/}, run in order by \texttt{run\_all.sh}, which reads the raw traces, recomputes the statistical summary, and emits both machine-readable JSON results and the LaTeX macro file (\texttt{manuscript/macros.tex}) this manuscript expands; nothing measured is transcribed by hand. The released raw-data package contains \ReleasedRowsTotal{} rows across \ReleasedTracesCount{} CSV traces, plus per-device and per-gateway provenance logs and a Fabric-ledger block sample (Section~\ref{sec:analyst-data}); resampling (bootstrap confidence intervals) uses a fixed seed and is used only for uncertainty estimation, never presented as a newly measured observation.

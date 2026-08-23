@@ -1,0 +1,52 @@
+{
+  "100 throughput runs (10x2x5)": {
+    "expected": 100,
+    "match": true,
+    "verified_real": 100
+  },
+  "146,400 sensor readings": {
+    "expected": 146400,
+    "match": true,
+    "verified_real": 146400
+  },
+  "200 revocation-stage records": {
+    "expected": 200,
+    "match": true,
+    "verified_real": 200
+  },
+  "209,000 authorization decisions": {
+    "expected": 209000,
+    "match": true,
+    "verified_real": 209000
+  },
+  "3 gateway outages": {
+    "expected": 3,
+    "match": true,
+    "verified_real": 3
+  },
+  "32 peer-multiplicity runs": {
+    "expected": 32,
+    "match": true,
+    "verified_real": 32
+  },
+  "61-day deployment": {
+    "expected": 61,
+    "match": true,
+    "verified_real": 61
+  },
+  "8 runs per peer configuration": {
+    "expected": 8,
+    "match": true,
+    "verified_real": 8
+  },
+  "8,000 authorization-boundary attempts": {
+    "expected": 8000,
+    "match": true,
+    "verified_real": 8000
+  },
+  "973 field revocation denials": {
+    "expected": 973,
+    "match": true,
+    "verified_real": 973
+  }
+}

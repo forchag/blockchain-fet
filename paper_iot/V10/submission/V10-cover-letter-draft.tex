@@ -1,0 +1,28 @@
+\documentclass[11pt]{letter}
+\usepackage[margin=1in]{geometry}
+\signature{Forcha Glen Beloa}
+\address{Department of Computer Engineering \\ Faculty of Engineering and Technology \\ University of Buea \\ Buea, Cameroon}
+
+\begin{document}
+\begin{letter}{Editor-in-Chief\\Internet of Things (Elsevier)}
+
+\opening{Dear Editor,}
+
+We submit ``Blockchain Access Control for Agricultural Edge IoT: A 61-Day Hyperledger Fabric Field Study and Implementation Postmortem'' for consideration in \emph{Internet of Things}.
+
+This version (V10) recomputes every numerical result in the manuscript from a raw-data package supplied by our data analyst, using a reanalysis pipeline released alongside the article. Where the recomputation reproduced a previously circulated draft's reported values, we retained them; where it did not, we replaced them with the verified value and documented the difference and its likely explanation in the accompanying changelog. Two findings from this reanalysis are, in our view, material to how the manuscript should be read:
+
+First, a repository directory that predates this analysis and is labelled as measured field data does not, on inspection, appear to be independently verified field data; we did not use it, left it untouched, and documented the discrepancy rather than silently relying on either dataset.
+
+Second, the corrected chaincode, firmware and gateway artifacts described in the implementation-postmortem section are fully specified and arithmetically checked in this version, but no such corrected package exists as a separate, tagged release in the repository at the time of this submission. We report the corrections as specifications, not as evaluated software, and we have adjusted every affected claim (performance, correctness, and the Data Availability statement) accordingly rather than assume the correction had been built because it had been described.
+
+We believe the 61-day field deployment, the counterbalanced controlled experiments verified against the released run manifest, and the code-to-specification audit -- confirmed here directly against the released source rather than taken on a prior draft's description -- together support the paper's central claim: that access-control cost and correctness in a long-running Hyperledger Fabric IoT deployment are not adequately characterized by short laboratory benchmarks alone.
+
+The manuscript, its analysis pipeline, and full documentation of every verified, corrected, or withdrawn claim are available for the editor's and reviewers' inspection at the repository named in the Data Availability statement. We confirm this manuscript is not under consideration elsewhere and has no conflicts of interest to declare beyond those stated in the manuscript.
+
+Thank you for your consideration.
+
+\closing{Sincerely,}
+
+\end{letter}
+\end{document}

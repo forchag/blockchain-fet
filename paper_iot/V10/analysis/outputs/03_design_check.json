@@ -1,0 +1,48 @@
+{
+  "cycles_detected": 2,
+  "each_config_occupies_each_position_exactly_twice": true,
+  "host_ids_used": [
+    "bench-host-01"
+  ],
+  "n_peer_counts": 4,
+  "n_repetitions": 8,
+  "n_runs": 32,
+  "peer_count_by_position_in_cycle_crosstab": {
+    "16": {
+      "1": 2,
+      "2": 2,
+      "3": 2,
+      "4": 2
+    },
+    "32": {
+      "1": 2,
+      "2": 2,
+      "3": 2,
+      "4": 2
+    },
+    "4": {
+      "1": 2,
+      "2": 2,
+      "3": 2,
+      "4": 2
+    },
+    "8": {
+      "1": 2,
+      "2": 2,
+      "3": 2,
+      "4": 2
+    }
+  },
+  "runs_per_peer_count": {
+    "4": 8,
+    "8": 8,
+    "16": 8,
+    "32": 8
+  },
+  "session_ids_used": [
+    "peer-scaling-2025-10"
+  ],
+  "single_physical_host": true,
+  "tx_per_run": 130,
+  "tx_per_run_constant": true
+}

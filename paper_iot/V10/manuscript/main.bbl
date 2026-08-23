@@ -1,0 +1,254 @@
+\begin{thebibliography}{10}
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\expandafter\ifx\csname href\endcsname\relax
+  \def\href#1#2{#2} \def\path#1{#1}\fi
+
+\bibitem{zhang2002precision}
+N.~Zhang, M.~Wang, N.~Wang, Precision agriculture: A worldwide overview,
+  Computers and Electronics in Agriculture 36 (2002) 113--132.
+
+\bibitem{benedict2021decentralized}
+S.~Benedict, Decentralized access control architecture for iot-enabled smart
+  environments, Internet of Things 14 (2021) 100379.
+
+\bibitem{ferrag2020security}
+M.~Ferrag, L.~Shu, X.~Yang, A.~Derhab, L.~Maglaras, Security and privacy for
+  green iot-based agriculture: Review, blockchain solutions, and challenges,
+  IEEE Access 8 (2020) 32031--32053.
+
+\bibitem{kamilaris2019rise}
+A.~Kamilaris, A.~Fonts, F.~Prenafeta-Bold{\'u}, The rise of blockchain
+  technology in agriculture and food supply chains, Trends in Food Science \&
+  Technology 91 (2019) 640--652.
+
+\bibitem{rustemi2025synergizing}
+A.~Rustemi, F.~Dalipi, Synergizing iot, ai, and blockchain for smart
+  agriculture: Challenges, opportunities, and future directions, Internet of
+  Things 34 (2025) 101778.
+
+\bibitem{abang2024latency}
+J.~Abang, H.~Takruri, R.~Al-Zaidi, M.~Al-Khalidi, Latency performance modelling
+  in hyperledger fabric blockchain: Challenges and directions with an iot
+  perspective, Internet of Things 26 (2024) 101217.
+
+\bibitem{sandhu1996rolebased}
+R.~Sandhu, E.~Coyne, H.~Feinstein, C.~Youman, Role-based access control models,
+  Computer 29 (1996) 38--47.
+
+\bibitem{ferraiolo2001proposed}
+D.~Ferraiolo, R.~Sandhu, S.~Gavrila, D.~Kuhn, R.~Chandramouli, Proposed nist
+  standard for role-based access control, ACM Transactions on Information and
+  System Security 4 (2001) 224--274.
+
+\bibitem{ye2014efficient}
+N.~Ye, Y.~Zhu, R.~Wang, R.~Malekian, Q.~Lin, An efficient authentication and
+  access control scheme for perception layer of internet of things, Applied
+  Mathematics \& Information Sciences 8 (2014) 1617--1624.
+
+\bibitem{hu2014guide}
+V.~Hu, D.~Ferraiolo, R.~Kuhn, A.~Schnitzer, K.~Sandlin, R.~Miller, K.~Scarfone,
+  Guide to attribute based access control (abac) definition and considerations,
+  Tech. Rep. SP 800-162, NIST (2014).
+
+\bibitem{servos2017current}
+D.~Servos, S.~Osborn, Current research and open problems in attribute-based
+  access control, ACM Computing Surveys 49 (2017) 65:1--65:45.
+
+\bibitem{hernandez2013distributed}
+J.~Hern{\'a}ndez-Ramos, A.~Jara, L.~Mar{\'i}n, A.~Skarmeta, Distributed
+  capability-based access control for the internet of things, Journal of
+  Internet Services and Information Security 3 (2013) 1--16.
+
+\bibitem{alshehri2016access}
+A.~Alshehri, R.~Sandhu, Access control models for cloud-enabled internet of
+  things: A proposed framework, in: Proc. IEEE CIC, 2016, pp. 530--538.
+
+\bibitem{sciancalepore2017oauthiot}
+S.~Sciancalepore, G.~Piro, G.~Boggia, G.~Bianchi, Oauth-iot: An access control
+  framework for the internet of things based on open standards, in: Proc. IEEE
+  ISCC, 2017, pp. 676--681.
+
+\bibitem{novo2018blockchain}
+O.~Novo, Blockchain meets iot: An architecture for scalable access management
+  in iot, IEEE Internet of Things Journal 5 (2018) 1184--1195.
+
+\bibitem{ouaddah2016fairaccess}
+A.~Ouaddah, A.~Abou~Elkalam, A.~Ait~Ouahman, Fairaccess: A new blockchain-based
+  access control framework for the internet of things, Security and
+  Communication Networks 9 (2016) 5943--5964.
+
+\bibitem{xu2018blendcac}
+R.~Xu, Y.~Chen, E.~Blasch, G.~Chen, Blendcac: A blockchain-enabled
+  decentralized capability-based access control for iots, in: Proc. IEEE
+  iThings, 2018, pp. 1027--1034.
+
+\bibitem{shih2022blockchainbased}
+D.~Shih, P.~Jheng, D.~Yen, C.~Huang, A blockchain-based access control model
+  for industrial iot, Sensors 22 (2022) 2188.
+
+\bibitem{pajooh2021hyperledger}
+H.~Pajooh, M.~Hammoudeh, F.~Alam, S.~Brocklehurst, Hyperledger fabric
+  blockchain for securing the edge iot: Systems architecture, experiments and
+  critical observations, Electronics 10 (2021) 1338.
+
+\bibitem{ke2023performance}
+C.~Ke, S.~Park, Performance modeling of hyperledger fabric for iot access
+  control applications, Future Internet 15 (2023) 115.
+
+\bibitem{putra2021trust}
+G.~Putra, V.~Dedeoglu, S.~Kanhere, R.~Jurdak, Trust management in decentralized
+  iot access control system, in: Proc. IEEE BCCA, 2021, pp. 1--8.
+
+\bibitem{usman2024blockchainbased}
+M.~Usman, A.~Jolfaei, M.~Tariq, Blockchain-based access control for industrial
+  iot: Domain policy architecture with smart contracts, Computer Networks 243
+  (2024) 110286.
+
+\bibitem{gonzalez2023use}
+V.~Gonz{\'a}lez, L.~S{\'a}nchez, J.~Lanza, J.~Santana, P.~Sotres,
+  A.~Garc{\'i}a, On the use of blockchain to enable a highly scalable internet
+  of things data marketplace, Internet of Things 22 (2023) 100722.
+
+\bibitem{idrissi2024blockchain}
+M.~Idrissi, F.~Palmieri, Blockchain-based authentication and authorization for
+  iot systems: An end-to-end latency analysis on constrained hardware, The
+  Journal of Supercomputing 80 (2024) 1--32.
+
+\bibitem{tzenetopoulos2022hlfkubed}
+A.~Tzenetopoulos, P.~Katsaros, I.~Mavridis, Hlf-kubed: Hyperledger fabric
+  blockchain on edge clusters for iot identity and access control, Future
+  Generation Computer Systems 135 (2022) 271--283.
+
+\bibitem{zaidi2023fabrication}
+S.~Zaidi, M.~Al-Qurishi, M.~Abidin, S.~Almakdi, Y.~Asiri, Fabrication: A
+  hyperledger fabric framework for scalable iot access control, IEEE Internet
+  of Things Journal 10 (2023) 12636--12649.
+
+\bibitem{bandara2021fabric}
+E.~Bandara, X.~Liang, K.~De~Zoysa, P.~Foytik, S.~Shetty, Fabric-based access
+  control for agricultural supply-chain traceability: A multi-layer policy
+  model, IEEE Transactions on Dependable and Secure Computing 18 (2021)
+  2089--2101.
+
+\bibitem{lamport2002specifying}
+L.~Lamport, Specifying Systems: The TLA+ Language and Tools for Hardware and
+  Software Engineers, Addison-Wesley, 2002.
+
+\bibitem{newcombe2015how}
+C.~Newcombe, T.~Rath, F.~Zhang, B.~Munteanu, M.~Brooker, M.~Deardeuff, How
+  amazon web services uses formal methods, Communications of the ACM 58 (2015)
+  66--73.
+
+\bibitem{tian2017supply}
+F.~Tian, A supply chain traceability system for food safety based on haccp,
+  blockchain and internet of things, in: Proc. ICSSSM, 2017, pp. 1--6.
+
+\bibitem{lin2019food}
+Q.~Lin, H.~Wang, X.~Pei, J.~Wang, Food safety traceability system based on
+  blockchain and epcis, IEEE Access 7 (2019) 20698--20707.
+
+\bibitem{safeer2025agrifarming}
+S.~Safeer, P.~Gallo, C.~Pulvento, Agri-farming with computer vision, iot and
+  blockchain towards climate smart cultivation, Internet of Things 34 (2025)
+  101749.
+
+\bibitem{liu2019distributed}
+Y.~Liu, F.~Yu, X.~Li, H.~Ji, V.~Leung, Distributed resource allocation in
+  blockchain-based video streaming systems with mobile edge computing, IEEE
+  Transactions on Wireless Communications 18 (2019) 695--708.
+
+\bibitem{wang2020convergence}
+X.~Wang, Y.~Han, V.~Leung, D.~Niyato, X.~Yan, X.~Chen, Convergence of edge
+  computing and deep learning: A comprehensive survey, IEEE Communications
+  Surveys \& Tutorials 22 (2020) 869--904.
+
+\bibitem{mohanta2025smartcontract}
+B.~Mohanta, A.~Awad, T.~Elsaka, H.~Kheddar, E.~Baraka, Smart-contract-based
+  blockchain-enabled decentralized scheme for improving smart-grid security,
+  Internet of Things 34 (2025) 101811.
+
+\bibitem{w3c2022did}
+{World Wide Web Consortium}, Decentralized identifiers (dids) v1.0, W3C
+  Recommendation, \url{https://www.w3.org/TR/did-core/} (2022).
+
+\bibitem{ferdous2019search}
+M.~Ferdous, F.~Chowdhury, M.~Alassafi, In search of self-sovereign identity
+  leveraging blockchain technology, IEEE Access 7 (2019) 103059--103079.
+
+\bibitem{tara2023decentralized}
+S.~Tara, S.~Zeadally, D.~Sookun, Decentralized identity management for iot
+  devices using blockchain and zero-knowledge proofs, IEEE Internet of Things
+  Journal 10 (2023) 3817--3827.
+
+\bibitem{adelantado2017understanding}
+F.~Adelantado, X.~Vilajosana, P.~Tuset-Peiro, B.~Martinez, J.~Melia-Segui,
+  T.~Watteyne, Understanding the limits of lorawan, IEEE Communications
+  Magazine 55 (2017) 34--40.
+
+\bibitem{neumann2008batman}
+A.~Neumann, C.~Aichele, M.~Lindner, S.~Wunderlich, Better approach to mobile
+  ad-hoc networking (b.a.t.m.a.n.), IETF Internet Draft
+  draft-openmesh-b-a-t-m-a-n-00 (2008).
+
+\bibitem{androulaki2018hyperledger}
+E.~Androulaki, A.~Barger, V.~Bortnikov, C.~Cachin, K.~Christidis, A.~De~Caro,
+  D.~Enyeart, C.~Ferris, G.~Laventman, Y.~Manevich, S.~Muralidharan, C.~Murthy,
+  B.~Nguyen, M.~Sethi, G.~Singh, K.~Smith, A.~Sorniotti, C.~Stathakopoulou,
+  M.~Vukoli{\'c}, S.~Cocco, J.~Yellick, Hyperledger fabric: A distributed
+  operating system for permissioned blockchains, in: Proc. EuroSys 2018, 2018,
+  pp. 30:1--30:15.
+
+\bibitem{ongaro2014search}
+D.~Ongaro, J.~Ousterhout, In search of an understandable consensus algorithm,
+  in: Proc. USENIX ATC 14, 2014, pp. 305--319.
+
+\bibitem{yin2019hotstuff}
+M.~Yin, D.~Malkhi, M.~Reiter, G.~Gueta, I.~Abraham, Hotstuff: Bft consensus
+  with linearity and responsiveness, in: Proc. ACM PODC 2019, 2019, pp.
+  347--356.
+
+\bibitem{castro1999practical}
+M.~Castro, B.~Liskov, Practical byzantine fault tolerance, in: Proc. OSDI 99,
+  1999, pp. 173--186.
+
+\bibitem{hyperledger2025v3}
+{Hyperledger Foundation}, Hyperledger fabric v3.0: What's new,
+  \url{https://hyperledger-fabric.readthedocs.io/en/release-3.0/whatsnew.html}
+  (2025).
+
+\bibitem{sandhu1999arbac97}
+R.~Sandhu, V.~Bhamidipati, Q.~Munawer, The arbac97 model for role-based
+  administration of roles, ACM Transactions on Information and System Security
+  2 (1999) 105--135.
+
+\bibitem{raza2013lithe}
+S.~Raza, H.~Shafagh, K.~Hewage, R.~Hummen, T.~Voigt, Lithe: Lightweight secure
+  coap for the internet of things, IEEE Sensors Journal 13 (2013) 3711--3720.
+
+\bibitem{garner1959residue}
+H.~Garner, The residue number system, IRE Transactions on Electronic Computers
+  EC-8 (1959) 140--147.
+
+\bibitem{thakkar2018performance}
+P.~Thakkar, S.~Nathan, B.~Viswanathan, Performance benchmarking and optimizing
+  hyperledger fabric blockchain platform, in: Proc. IEEE MASCOTS, 2018, pp.
+  264--276.
+
+\bibitem{leacox2013lowcost}
+J.~Lea-Cox, A.~Belayneh, M.~van Iersel, E.~Lichtenberg, G.~Kantor, Low-cost
+  soil moisture sensor networks for precision irrigation: Advances and
+  limitations, HortTechnology 23 (2013) 792--798.
+
+\bibitem{w3c2024bitstring}
+{World Wide Web Consortium}, Bitstring status list v1.0, W3C Candidate
+  Recommendation Snapshot,
+  \url{https://www.w3.org/TR/vc-bitstring-status-list/} (2024).
+
+\bibitem{fedrecheski2023tinyocsp}
+G.~Fedrecheski, J.~Rabaey, L.~Costa, P.~Calcina-Ccori, W.~Pereira, M.~Zuffo,
+  Tinyocsp: Lightweight certificate revocation for constrained iot devices,
+  Internet of Things 22 (2023) 100740.
+
+\end{thebibliography}

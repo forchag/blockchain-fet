@@ -1,0 +1,11 @@
+claim,v92_value,real_data_value,difference,likely_explanation,manuscript_correction_required
+61-day deployment,61,61,0,exact match,False
+"209,000 authorization decisions",209000,209000,0,exact match,False
+"146,400 sensor readings",146400,146400,0,exact match,False
+32 peer-multiplicity runs,32,32,0,exact match,False
+8 runs per peer configuration,8,8,0,exact match,False
+100 throughput runs (10x2x5),100,100,0,exact match,False
+"8,000 authorization-boundary attempts",8000,8000,0,exact match,False
+200 revocation-stage records,200,200,0,exact match,False
+973 field revocation denials,973,973,0,exact match,False
+3 gateway outages,3,3,0,exact match,False

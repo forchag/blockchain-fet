@@ -1,0 +1,15 @@
+{
+  "csv_file_count": 12,
+  "jsonl_file_count": 1,
+  "log_directories": {
+    "analysis/data/raw/raw/provenance/device_logs": {
+      "file_count": 50,
+      "total_lines": 146400
+    },
+    "analysis/data/raw/raw/provenance/gateway_logs": {
+      "file_count": 4,
+      "total_lines": 146406
+    }
+  },
+  "log_directory_count": 2
+}

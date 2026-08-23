@@ -1,0 +1,44 @@
+{
+  "distinct_timezone_offsets_observed": [
+    "+01:00"
+  ],
+  "invalid_boolean_signature_valid": 0,
+  "invalid_concurrency_values": 0,
+  "invalid_crt_residue_counts": 0,
+  "invalid_peer_counts": 0,
+  "malformed_decision_values": {
+    "authorization_boundary_attempts": [
+      "denied"
+    ],
+    "authorization_decisions": [
+      "allowed",
+      "denied"
+    ],
+    "sensor_transactions": [
+      "allowed"
+    ]
+  },
+  "malformed_roles_authz": 0,
+  "missing_signatures_field": 0,
+  "negative_crypto_duration": 0,
+  "negative_energy": 0,
+  "negative_or_zero_latency": {
+    "authorization_decisions": 0,
+    "peer_scaling_transactions": 0,
+    "sensor_transactions": 0
+  },
+  "negative_or_zero_throughput": 0,
+  "out_of_range_energy_mj": {
+    "max": 27.813,
+    "min": 9.632,
+    "note": "plausible LoRa transmission-energy range (single reading, mJ); no implausible outliers found"
+  },
+  "revocation_stage_status_values": [
+    "completed",
+    "delayed"
+  ],
+  "run_sequence_monotonic": {
+    "peer_scaling": true
+  },
+  "timezone_consistency": "All field/experiment/security timestamps carry a fixed +01:00 offset; verified no mixed offsets present."
+}

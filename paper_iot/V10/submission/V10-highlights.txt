@@ -1,0 +1,5 @@
+A 61-day field deployment recorded 209,000 authorization decisions over 50 sensors
+Counterbalanced runs confirmed against the manifest link peer count to write latency
+The access-control-enabled path averaged 9.4% lower throughput than the baseline
+Code audit confirmed policy, residue-recovery and signature-verification defects
+Traces and analysis code support reproduction; a corrected build is unimplemented

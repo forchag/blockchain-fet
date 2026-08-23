@@ -1,0 +1,65 @@
+{
+  "calibration_caveat": "The released repository contains no ADC-to-percent calibration constant for soil_moisture (esp32/main/sensor.c transmits raw ADC counts only; no gateway or backend code in this repository converts them to a percentage). The percentage-to-raw mapping used here is an explicitly stated assumption, not a value taken from the codebase. The 100% bound-exceedance finding is invariant to the assumed polarity; the exact packed-value minimum and maximum are not.",
+  "corrected_domain": {
+    "below_min_pairwise_bound": true,
+    "legal_domain_max": 51455,
+    "moduli": [
+      253,
+      254,
+      255
+    ],
+    "pairwise_bounds": {
+      "a*b": 64262,
+      "a*c": 64515,
+      "b*c": 64770,
+      "max_triple_product": 16386810,
+      "min": 64262
+    }
+  },
+  "deployed_moduli": [
+    97,
+    101,
+    103
+  ],
+  "deployed_pairwise_bounds": {
+    "a*b": 9797,
+    "a*c": 9991,
+    "b*c": 10403,
+    "max_triple_product": 1009091,
+    "min": 9797
+  },
+  "quantization_error": {
+    "note": "12-bit to 8-bit soil-field requantisation error, exhaustive sweep of the raw ADC domain (0..4095). The corrected firmware's bit-shift implementation corresponds to the truncating quantiser; round-to-nearest is shown for comparison only.",
+    "round_to_nearest_quantiser": {
+      "max_error_pct_full_scale": 0.19536019536019536,
+      "rms_error_pct_full_scale": 0.11319135582221491
+    },
+    "truncating_quantiser": {
+      "max_error_pct_full_scale": 0.3663003663003663,
+      "rms_error_pct_full_scale": 0.21497944886030534
+    }
+  },
+  "reconstruction_direct_polarity": {
+    "n_exceed_min_bound": 146400,
+    "n_total": 146400,
+    "packed_max": 509813,
+    "packed_min": 121085,
+    "pct_exceed_min_bound": 100.0,
+    "polarity_assumption": "direct",
+    "soil_raw_max": 2536,
+    "soil_raw_min": 602
+  },
+  "reconstruction_reversed_polarity": {
+    "n_exceed_min_bound": 146400,
+    "n_total": 146400,
+    "packed_max": 702176,
+    "packed_min": 313436,
+    "pct_exceed_min_bound": 100.0,
+    "polarity_assumption": "reversed",
+    "soil_raw_max": 3493,
+    "soil_raw_min": 1559
+  },
+  "three_residue_count": 14605,
+  "two_residue_reconstruction_count": 131795,
+  "two_residue_reconstruction_pct": 90.02390710382514
+}
