@@ -1,0 +1,61 @@
+\documentclass[preprint,12pt]{elsarticle}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{tikz}
+\usetikzlibrary{positioning}
+\usepackage{float}
+\usepackage{longtable}
+\usepackage[protrusion=true,expansion=false]{microtype}
+\sloppy
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue}
+\usepackage[T1]{fontenc}
+\journal{Internet of Things}
+
+\input{macros.tex}
+
+\begin{document}
+
+\begin{frontmatter}
+
+\title{Blockchain Access Control for Agricultural Edge IoT: A 61-Day Hyperledger Fabric Field Study and Implementation Postmortem}
+
+\author[buea]{Forcha Glen Beloa\corref{cor1}}
+\ead{glenbeloa@gmail.com}
+\author[buea]{Michael Ekonde Sone}
+\ead{ekonde.sone@gmail.com}
+\author[buea]{Elie Fute Tagne}
+\ead{eliefute@yahoo.fr}
+\author[douala]{Andr\'e Paul Mvogo Asse}
+\ead{mvogoasseandre@gmail.com}
+
+\cortext[cor1]{Corresponding author}
+\address[buea]{Department of Computer Engineering, Faculty of Engineering and Technology, University of Buea, Buea, Cameroon}
+\address[douala]{\'Ecole Nationale Sup\'erieure Polytechnique de Douala, Universit\'e de Douala, Douala, Cameroon}
+
+\begin{abstract}
+\input{sections/abstract.tex}
+\end{abstract}
+
+\begin{keyword}
+Hierarchical role-based access control \sep Hyperledger Fabric \sep Agricultural IoT \sep Edge computing \sep Performance measurement \sep Certificate revocation \sep Reproducible research
+\end{keyword}
+
+\end{frontmatter}
+
+\input{sections/introduction.tex}
+\input{sections/related_work.tex}
+\input{sections/design.tex}
+\input{sections/implementation.tex}
+\input{sections/methodology.tex}
+\input{sections/results.tex}
+\input{sections/discussion.tex}
+\input{sections/conclusion.tex}
+\input{sections/backmatter.tex}
+
+\bibliographystyle{elsarticle-num}
+\bibliography{references}
+
+\end{document}

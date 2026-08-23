@@ -1,0 +1,15 @@
+{
+  "condition_ci_high": -2.8791055784590625,
+  "condition_ci_low": -8.412560788642049,
+  "condition_coef_tps": -5.645833183550556,
+  "condition_p": 0.00010412620893671613,
+  "interaction_ci_high": 0.09423380258676868,
+  "interaction_ci_low": -0.0983417819308615,
+  "interaction_coef_tps_per_client": -0.0020539896720464107,
+  "interaction_p": 0.9663094197967946,
+  "n": 100,
+  "position_coef": 0.012292602809014008,
+  "position_p": 0.9596949964029677,
+  "r2": 0.3166490742923552,
+  "residual_shapiro_p": 0.05602479313454877
+}

@@ -1,0 +1,28 @@
+{
+  "days_observed": 61,
+  "decision_path_uptime_pct": 99.36474722802672,
+  "gateway_hour_uptime_pct": 99.84118680700668,
+  "outage_affected_components": [
+    "gw-north",
+    "gw-west",
+    "gw-south"
+  ],
+  "outage_count": 3,
+  "outage_durations_hours": [
+    8.7,
+    0.4,
+    0.2
+  ],
+  "outage_max_hours": 8.7,
+  "outage_min_hours": 0.2,
+  "outage_total_hours": 9.299999999999999,
+  "outage_types": [
+    "lora_link_failure",
+    "power_fluctuation",
+    "firmware_watchdog_reset"
+  ],
+  "sensor_writes_per_day_constant": true,
+  "sensor_writes_per_day_max": 2400,
+  "sensor_writes_per_day_min": 2400,
+  "total_deployment_hours": 1463.9841666666666
+}

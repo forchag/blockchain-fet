@@ -1,0 +1,51 @@
+\begin{thebibliography}{6}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Bandara et~al.(2021)Bandara, Liang, De~Zoysa, Foytik, and
+  Shetty]{bandara2021fabric}
+E.~Bandara, X.~Liang, K.~De~Zoysa, P.~Foytik, and S.~Shetty.
+\newblock Fabric-based access control for agricultural supply-chain
+  traceability: A multi-layer policy model.
+\newblock \emph{IEEE Transactions on Dependable and Secure Computing},
+  18:\penalty0 2089--2101, 2021.
+
+\bibitem[Idrissi and Palmieri(2024)]{idrissi2024blockchain}
+M.~Idrissi and F.~Palmieri.
+\newblock Blockchain-based authentication and authorization for iot systems: An
+  end-to-end latency analysis on constrained hardware.
+\newblock \emph{The Journal of Supercomputing}, 80:\penalty0 1--32, 2024.
+
+\bibitem[Ke and Park(2023)]{ke2023performance}
+C.K. Ke and S.~Park.
+\newblock Performance modeling of hyperledger fabric for iot access control
+  applications.
+\newblock \emph{Future Internet}, 15:\penalty0 115, 2023.
+
+\bibitem[Pajooh et~al.(2021)Pajooh, Hammoudeh, Alam, and
+  Brocklehurst]{pajooh2021hyperledger}
+H.H. Pajooh, M.~Hammoudeh, F.~Alam, and S.~Brocklehurst.
+\newblock Hyperledger fabric blockchain for securing the edge iot: Systems
+  architecture, experiments and critical observations.
+\newblock \emph{Electronics}, 10:\penalty0 1338, 2021.
+
+\bibitem[Tzenetopoulos et~al.(2022)Tzenetopoulos, Katsaros, and
+  Mavridis]{tzenetopoulos2022hlfkubed}
+A.~Tzenetopoulos, P.~Katsaros, and I.~Mavridis.
+\newblock Hlf-kubed: Hyperledger fabric blockchain on edge clusters for iot
+  identity and access control.
+\newblock \emph{Future Generation Computer Systems}, 135:\penalty0 271--283,
+  2022.
+
+\bibitem[Zaidi et~al.(2023)Zaidi, Al-Qurishi, Abidin, Almakdi, and
+  Asiri]{zaidi2023fabrication}
+S.M.S. Zaidi, M.~Al-Qurishi, M.Z.u. Abidin, S.~Almakdi, and Y.~Asiri.
+\newblock Fabrication: A hyperledger fabric framework for scalable iot access
+  control.
+\newblock \emph{IEEE Internet of Things Journal}, 10:\penalty0 12636--12649,
+  2023.
+
+\end{thebibliography}

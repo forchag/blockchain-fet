@@ -1,0 +1,114 @@
+{
+  "authorization_boundary_attempts": {
+    "dataset": "authorization_boundary_attempts",
+    "duplicate_attempt_id": 0,
+    "duplicate_complete_rows": 0,
+    "missing_attempt_id": 0,
+    "n_rows": 8000,
+    "timestamp_tz_offsets_seen": [
+      "+01:00"
+    ],
+    "unparseable_timestamp": 0
+  },
+  "authorization_decisions": {
+    "dataset": "authorization_decisions",
+    "duplicate_complete_rows": 0,
+    "duplicate_entry_id": 0,
+    "duplicate_tx_id": 46151,
+    "missing_entry_id": 0,
+    "missing_tx_id": 46152,
+    "n_rows": 209000,
+    "timestamp_outside_deployment_window": 0,
+    "timestamp_tz_offsets_seen": [
+      "+01:00"
+    ],
+    "unparseable_timestamp": 0
+  },
+  "cryptographic_timings": {
+    "dataset": "cryptographic_timings",
+    "duplicate_complete_rows": 0,
+    "duplicate_sample_id": 0,
+    "missing_sample_id": 0,
+    "n_rows": 900
+  },
+  "energy_measurements": {
+    "dataset": "energy_measurements",
+    "duplicate_complete_rows": 0,
+    "duplicate_sample_id": 0,
+    "missing_sample_id": 0,
+    "n_rows": 300
+  },
+  "peer_scaling_runs": {
+    "dataset": "peer_scaling_runs",
+    "duplicate_complete_rows": 0,
+    "duplicate_run_id": 0,
+    "end_timestamp_tz_offsets_seen": [
+      "+01:00"
+    ],
+    "missing_run_id": 0,
+    "n_rows": 32,
+    "start_timestamp_tz_offsets_seen": [
+      "+01:00"
+    ],
+    "unparseable_end_timestamp": 0,
+    "unparseable_start_timestamp": 0
+  },
+  "peer_scaling_transactions": {
+    "dataset": "peer_scaling_transactions",
+    "duplicate_complete_rows": 0,
+    "duplicate_tx_id": 0,
+    "missing_tx_id": 0,
+    "n_rows": 4160
+  },
+  "revocation_denials": {
+    "dataset": "revocation_denials",
+    "duplicate_attempt_id": 0,
+    "duplicate_complete_rows": 0,
+    "missing_attempt_id": 0,
+    "n_rows": 973,
+    "timestamp_tz_offsets_seen": [
+      "+01:00"
+    ],
+    "unparseable_timestamp": 0
+  },
+  "revocation_stages": {
+    "dataset": "revocation_stages",
+    "duplicate_complete_rows": 0,
+    "duplicate_event_id": 68,
+    "missing_event_id": 0,
+    "n_rows": 200,
+    "stage_timestamp_tz_offsets_seen": [
+      "+01:00"
+    ],
+    "unparseable_stage_timestamp": 0
+  },
+  "sensor_transactions": {
+    "dataset": "sensor_transactions",
+    "duplicate_complete_rows": 0,
+    "duplicate_reading_id": 0,
+    "duplicate_tx_id": 0,
+    "missing_reading_id": 0,
+    "missing_tx_id": 0,
+    "n_rows": 146400,
+    "timestamp_outside_deployment_window": 0,
+    "timestamp_tz_offsets_seen": [
+      "+01:00"
+    ],
+    "unparseable_timestamp": 0
+  },
+  "throughput_runs": {
+    "dataset": "throughput_runs",
+    "duplicate_complete_rows": 0,
+    "duplicate_run_id": 0,
+    "end_timestamp_tz_offsets_seen": [
+      "+01:00"
+    ],
+    "missing_run_id": 0,
+    "n_rows": 100,
+    "start_timestamp_tz_offsets_seen": [
+      "+01:00"
+    ],
+    "unparseable_end_timestamp": 0,
+    "unparseable_start_timestamp": 0
+  }
+}

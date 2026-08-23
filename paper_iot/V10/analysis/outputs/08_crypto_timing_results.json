@@ -1,0 +1,25 @@
+{
+  "by_operation": {
+    "ed25519_sign": {
+      "mean_us": 894.79,
+      "median_us": 892.0,
+      "n": 300,
+      "sd_us": 89.35820534722177
+    },
+    "ed25519_verify": {
+      "mean_us": 101.88,
+      "median_us": 98.0,
+      "n": 300,
+      "sd_us": 19.91484211473567
+    },
+    "sha256": {
+      "mean_us": 15.083333333333334,
+      "median_us": 15.0,
+      "n": 300,
+      "sd_us": 2.9730768870217092
+    }
+  },
+  "n_samples_total": 900,
+  "sign_pipeline_us_sha256_plus_sign": 909.8733333333333,
+  "verify_us": 101.88
+}

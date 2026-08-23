@@ -1,0 +1,50 @@
+{
+  "campaign_seq_usable_as_independent_order_covariate": false,
+  "campaign_seq_vs_concurrency_correlation": 0.9950371902099892,
+  "concurrency_levels": [
+    10,
+    20,
+    30,
+    40,
+    50,
+    60,
+    70,
+    80,
+    90,
+    100
+  ],
+  "concurrency_order": "single fixed ascending sequence (one session)",
+  "conditions_interleaved_within_cell": true,
+  "n_concurrency_levels": 10,
+  "n_runs": 100,
+  "n_sessions": 1,
+  "runs_per_condition_per_level": {
+    "baseline": {
+      "10": 5,
+      "20": 5,
+      "30": 5,
+      "40": 5,
+      "50": 5,
+      "60": 5,
+      "70": 5,
+      "80": 5,
+      "90": 5,
+      "100": 5
+    },
+    "hrbac": {
+      "10": 5,
+      "20": 5,
+      "30": 5,
+      "40": 5,
+      "50": 5,
+      "60": 5,
+      "70": 5,
+      "80": 5,
+      "90": 5,
+      "100": 5
+    }
+  },
+  "session_ids": [
+    "throughput-2025-10"
+  ]
+}

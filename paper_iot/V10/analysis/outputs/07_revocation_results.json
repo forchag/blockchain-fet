@@ -1,0 +1,37 @@
+{
+  "delayed_count": 57,
+  "delayed_pct": 28.499999999999996,
+  "delayed_pct_by_stage": {
+    "cache_invalidation": 30.23255813953488,
+    "gossip": 24.528301886792452,
+    "propagation_complete": 25.49019607843137,
+    "publish": 33.9622641509434
+  },
+  "episode_reconstructable": false,
+  "episode_reconstruction_note": "No episode/correlation identifier links stages of the same revocation event; stage records for the same cert_user_id cannot be safely paired into single episodes because a subject may be revoked more than once over 61 days. End-to-end exposure and causal attribution against connectivity outages cannot be computed from this trace, consistent with V9.2's L5 (revocation observability).",
+  "field_revocation_denials": {
+    "count": 973,
+    "denominator_of_all_post_revocation_attempts_available": false,
+    "deny_reason_counts": {
+      "REVOKED_CREDENTIAL": 973
+    },
+    "per_day": 17.07017543859649,
+    "success_rate_estimable": false
+  },
+  "n_distinct_stage_types": 4,
+  "n_stage_records": 200,
+  "n_subjects": 132,
+  "n_subjects_appearing_once": 87,
+  "n_subjects_with_all_stage_types": 0,
+  "stage_name_counts": {
+    "cache_invalidation": 43,
+    "gossip": 53,
+    "propagation_complete": 51,
+    "publish": 53
+  },
+  "status_counts": {
+    "completed": 143,
+    "delayed": 57
+  },
+  "trace_span_days": 55
+}

@@ -1,0 +1,26 @@
+{
+  "airtime_ms_by_mode": {
+    "crt": 61.72246666666667,
+    "single_channel": 61.06933333333333
+  },
+  "crt": {
+    "mean_mj": 12.423093333333332,
+    "n": 150,
+    "sd_mj": 1.041277270301495
+  },
+  "measurement_note": "Single-node INA219-style bench measurement; not generalized across all 50 devices.",
+  "payload_bytes_range": [
+    65,
+    512
+  ],
+  "reduction_ci95_high": 49.336548266242495,
+  "reduction_ci95_low": 47.65316594615405,
+  "reduction_pct": 48.511402312900884,
+  "single_channel": {
+    "mean_mj": 24.127853333333334,
+    "n": 150,
+    "sd_mj": 1.4349318080594498
+  },
+  "welch_p": 3.6221606475888555e-192,
+  "welch_t": 80.85671251638024
+}

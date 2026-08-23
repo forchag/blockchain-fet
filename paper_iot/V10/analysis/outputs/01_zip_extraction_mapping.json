@@ -1,0 +1,408 @@
+{
+  "extracted_entries": [
+    {
+      "canonical_path": "V10/analysis/data/raw/raw/security/authorization_boundary_attempts.csv",
+      "sha256": "bedfd1299b1d66c077e34b2c0df2e9ea365abb52cf3861c87b3b3e118b60e4c3",
+      "size_bytes": 1123732,
+      "zip_entry": "raw/security/authorization_boundary_attempts.csv"
+    },
+    {
+      "canonical_path": "V10/analysis/data/raw/raw/experiments/cryptographic_timings.csv",
+      "sha256": "5ef9af4c77909e24284ede0a500728b39efe4120288816b95403ef1c9d527c0e",
+      "size_bytes": 26307,
+      "zip_entry": "raw/experiments/cryptographic_timings.csv"
+    },
+    {
+      "canonical_path": "V10/analysis/data/raw/raw/experiments/peer_scaling_transactions.csv",
+      "sha256": "843c2a9047e783cedcc560c6a0a5955a9517683a17c3be1209641763eac94016",
+      "size_bytes": 513307,
+      "zip_entry": "raw/experiments/peer_scaling_transactions.csv"
+    },
+    {
+      "canonical_path": "V10/analysis/data/raw/raw/experiments/throughput_runs.csv",
+      "sha256": "8cdc4f5b0d42d5c54b205f2c7f384bb624dbab9c668103753e8a1b23c16a9907",
+      "size_bytes": 11269,
+      "zip_entry": "raw/experiments/throughput_runs.csv"
+    },
+    {
+      "canonical_path": "V10/analysis/data/raw/raw/experiments/energy_measurements.csv",
+      "sha256": "ecf48dd8c3d6fa447df00b1ce4ec879c744de0c54bb3d87b4d687395da017daa",
+      "size_bytes": 11231,
+      "zip_entry": "raw/experiments/energy_measurements.csv"
+    },
+    {
+      "canonical_path": "V10/analysis/data/raw/raw/experiments/peer_scaling_runs.csv",
+      "sha256": "60cff8e04f61247880827b9b059edd24f85aa6b2b939c6ab387e2edd0b4825fc",
+      "size_bytes": 3316,
+      "zip_entry": "raw/experiments/peer_scaling_runs.csv"
+    },
+    {
+      "canonical_path": "V10/analysis/data/raw/raw/field/raw_field_topology.csv",
+      "sha256": "c229d3f87a9c8fa61facb46c19423451de0e024319d3ae5b928df18b8ea3d3e9",
+      "size_bytes": 2616,
+      "zip_entry": "raw/field/raw_field_topology.csv"
+    },
+    {
+      "canonical_path": "V10/analysis/data/raw/raw/field/connectivity_outages.csv",
+      "sha256": "61b244ed798abb8323800cedbeb620c6532ce98e4bd9d3cd9974cd6bd1ecfde2",
+      "size_bytes": 460,
+      "zip_entry": "raw/field/connectivity_outages.csv"
+    },
+    {
+      "canonical_path": "V10/analysis/data/raw/raw/field/revocation_denials.csv",
+      "sha256": "0c292d0a9e148e5b701a9c3c6e83b1a0978222024ff75850a6614bbe907e8766",
+      "size_bytes": 83035,
+      "zip_entry": "raw/field/revocation_denials.csv"
+    },
+    {
+      "canonical_path": "V10/analysis/data/raw/raw/field/sensor_transactions.csv",
+      "sha256": "e5fda53166f11ee3dcbd59c92bfc4014516a382c3caa11a39b4564a9a2f1e9ed",
+      "size_bytes": 24552574,
+      "zip_entry": "raw/field/sensor_transactions.csv"
+    },
+    {
+      "canonical_path": "V10/analysis/data/raw/raw/field/authorization_decisions.csv",
+      "sha256": "4fc877e6a79f8a525759f6b6345ffc760674387270b05e14f7eb37271bb99598",
+      "size_bytes": 26453698,
+      "zip_entry": "raw/field/authorization_decisions.csv"
+    },
+    {
+      "canonical_path": "V10/analysis/data/raw/raw/field/revocation_stages.csv",
+      "sha256": "f8673e5c07d7ef449adbf12a86098d0d227818f77408cf6b30879e4b94c10d86",
+      "size_bytes": 13226,
+      "zip_entry": "raw/field/revocation_stages.csv"
+    },
+    {
+      "canonical_path": "V10/analysis/data/raw/raw/provenance/device_logs/esp32-049.log",
+      "sha256": "3dc044548c17ce9f74e475c86ae6d93bbd3ed1f79201285b65e19397531b8060",
+      "size_bytes": 930502,
+      "zip_entry": "raw/provenance/device_logs/esp32-049.log"
+    },
+    {
+      "canonical_path": "V10/analysis/data/raw/raw/provenance/device_logs/esp32-048.log",
+      "sha256": "247d3302af605138859cfdb6089d5a9211fb44928e36cf5854808f6fa62cf020",
+      "size_bytes": 930520,
+      "zip_entry": "raw/provenance/device_logs/esp32-048.log"
+    },
+    {
+      "canonical_path": "V10/analysis/data/raw/raw/provenance/device_logs/esp32-029.log",
+      "sha256": "5b352b73b6b016f9b16037f0c3c90df85072b9c5238939e2c68996a56d769f2d",
+      "size_bytes": 930531,
+      "zip_entry": "raw/provenance/device_logs/esp32-029.log"
+    },
+    {
+      "canonical_path": "V10/analysis/data/raw/raw/provenance/device_logs/esp32-015.log",
+      "sha256": "1a42d85924da331ff5c8ceb0cd41c16b17f5fa9703c3c6bfc71fd647e9ca9f8c",
+      "size_bytes": 930540,
+      "zip_entry": "raw/provenance/device_logs/esp32-015.log"
+    },
+    {
+      "canonical_path": "V10/analysis/data/raw/raw/provenance/device_logs/esp32-001.log",
+      "sha256": "b73866dfac4e9f4cade59e0c04c43a2df110b68dc40943a99299478115a342ab",
+      "size_bytes": 930512,
+      "zip_entry": "raw/provenance/device_logs/esp32-001.log"
+    },
+    {
+      "canonical_path": "V10/analysis/data/raw/raw/provenance/device_logs/esp32-014.log",
+      "sha256": "20ca8a962725fe08d5dc7c79c7ed249b49c2013adc1b70c901ece17e7249554f",
+      "size_bytes": 930505,
+      "zip_entry": "raw/provenance/device_logs/esp32-014.log"
+    },
+    {
+      "canonical_path": "V10/analysis/data/raw/raw/provenance/device_logs/esp32-028.log",
+      "sha256": "d054747114c5d55eac7aade37a1e3e6c11c3671ae66cc22daa68e001f26101b2",
+      "size_bytes": 930519,
+      "zip_entry": "raw/provenance/device_logs/esp32-028.log"
+    },
+    {
+      "canonical_path": "V10/analysis/data/raw/raw/provenance/device_logs/esp32-002.log",
+      "sha256": "859e5ec587ae8d2a719cb54fb3aa4c60b8fd30cb87e9b8488cad05356f38d98d",
+      "size_bytes": 930533,
+      "zip_entry": "raw/provenance/device_logs/esp32-002.log"
+    },
+    {
+      "canonical_path": "V10/analysis/data/raw/raw/provenance/device_logs/esp32-016.log",
+      "sha256": "563b5a40898fbb3bc29566b2b2c50a3d4cedd55f7a8b9fd2090b3fa29f0205ad",
+      "size_bytes": 930480,
+      "zip_entry": "raw/provenance/device_logs/esp32-016.log"
+    },
+    {
+      "canonical_path": "V10/analysis/data/raw/raw/provenance/device_logs/esp32-017.log",
+      "sha256": "3ac11f3206716c848cbdf3b00fab78099d9d0fc20d8c51a6c98beb1bb4a7483d",
+      "size_bytes": 930566,
+      "zip_entry": "raw/provenance/device_logs/esp32-017.log"
+    },
+    {
+      "canonical_path": "V10/analysis/data/raw/raw/provenance/device_logs/esp32-003.log",
+      "sha256": "5c17d0d21e7ced93458f07dca64371971b0ba123c2b214f92530b23b3eacd172",
+      "size_bytes": 930534,
+      "zip_entry": "raw/provenance/device_logs/esp32-003.log"
+    },
+    {
+      "canonical_path": "V10/analysis/data/raw/raw/provenance/device_logs/esp32-007.log",
+      "sha256": "d947ec5772c93d8b31bbc01d750fd25c134d2f97de9229f8af2956c4fc0dd96c",
+      "size_bytes": 930529,
+      "zip_entry": "raw/provenance/device_logs/esp32-007.log"
+    },
+    {
+      "canonical_path": "V10/analysis/data/raw/raw/provenance/device_logs/esp32-013.log",
+      "sha256": "1e25c4c13d39c20721e127c142c3abc7606ed48b41536c00620c869adc0f08c8",
+      "size_bytes": 930478,
+      "zip_entry": "raw/provenance/device_logs/esp32-013.log"
+    },
+    {
+      "canonical_path": "V10/analysis/data/raw/raw/provenance/device_logs/esp32-012.log",
+      "sha256": "83a75dc55f71af5270bdd79b734abdeb3f39177e2b61e1b23adf6d3cc1a3a810",
+      "size_bytes": 930488,
+      "zip_entry": "raw/provenance/device_logs/esp32-012.log"
+    },
+    {
+      "canonical_path": "V10/analysis/data/raw/raw/provenance/device_logs/esp32-006.log",
+      "sha256": "eb82e7812fea65d93af697efe8501ac41bafa5ed71a2fefa997a0a0ad779530c",
+      "size_bytes": 930498,
+      "zip_entry": "raw/provenance/device_logs/esp32-006.log"
+    },
+    {
+      "canonical_path": "V10/analysis/data/raw/raw/provenance/device_logs/esp32-010.log",
+      "sha256": "28af74c6fd58fe00649c4a736080c8482b77f415532d04fd66f2f56409643ec3",
+      "size_bytes": 930552,
+      "zip_entry": "raw/provenance/device_logs/esp32-010.log"
+    },
+    {
+      "canonical_path": "V10/analysis/data/raw/raw/provenance/device_logs/esp32-004.log",
+      "sha256": "1ef9a007a2ca30ec6970a39ca2aa144b7262bfcb1a0cdfdecd1cf6c8aefb1a3c",
+      "size_bytes": 930543,
+      "zip_entry": "raw/provenance/device_logs/esp32-004.log"
+    },
+    {
+      "canonical_path": "V10/analysis/data/raw/raw/provenance/device_logs/esp32-038.log",
+      "sha256": "960c0092313979688b16f4a921d0529d2549cd2d61da3b21f2853439c74b7299",
+      "size_bytes": 930474,
+      "zip_entry": "raw/provenance/device_logs/esp32-038.log"
+    },
+    {
+      "canonical_path": "V10/analysis/data/raw/raw/provenance/device_logs/esp32-039.log",
+      "sha256": "a3106731336ed37cff77112fa9f3a713e9a874a1177d10fd3849019c7db85780",
+      "size_bytes": 930525,
+      "zip_entry": "raw/provenance/device_logs/esp32-039.log"
+    },
+    {
+      "canonical_path": "V10/analysis/data/raw/raw/provenance/device_logs/esp32-005.log",
+      "sha256": "198201b86945ebee7b6ea90abc4708dc0969dc48c355046c32510c83e0d83037",
+      "size_bytes": 930500,
+      "zip_entry": "raw/provenance/device_logs/esp32-005.log"
+    },
+    {
+      "canonical_path": "V10/analysis/data/raw/raw/provenance/device_logs/esp32-011.log",
+      "sha256": "b5ae8fa20c362a1fcd18b0c493280906797d2ca2f2d25fee8792cce14e7547c4",
+      "size_bytes": 930535,
+      "zip_entry": "raw/provenance/device_logs/esp32-011.log"
+    },
+    {
+      "canonical_path": "V10/analysis/data/raw/raw/provenance/device_logs/esp32-008.log",
+      "sha256": "218c17b649d61183ab83b5fc0b190fc4b19bc3a6218edd3afb592c49790e7ce5",
+      "size_bytes": 930522,
+      "zip_entry": "raw/provenance/device_logs/esp32-008.log"
+    },
+    {
+      "canonical_path": "V10/analysis/data/raw/raw/provenance/device_logs/esp32-034.log",
+      "sha256": "7cabbe590dd38d6ad9cbf1f0f9c46712ef6d03aa1df20e951c6b7a2fe02e528e",
+      "size_bytes": 930520,
+      "zip_entry": "raw/provenance/device_logs/esp32-034.log"
+    },
+    {
+      "canonical_path": "V10/analysis/data/raw/raw/provenance/device_logs/esp32-020.log",
+      "sha256": "05f4c06a9a567cba1f864a34b5d5b5a4c7cb7d93d3585d26ad4e93c199627bf6",
+      "size_bytes": 930524,
+      "zip_entry": "raw/provenance/device_logs/esp32-020.log"
+    },
+    {
+      "canonical_path": "V10/analysis/data/raw/raw/provenance/device_logs/esp32-021.log",
+      "sha256": "00a995fa769908096b5be7341d87cdaf6e6e27a5251b63c9dd630a5a335d3c7e",
+      "size_bytes": 930534,
+      "zip_entry": "raw/provenance/device_logs/esp32-021.log"
+    },
+    {
+      "canonical_path": "V10/analysis/data/raw/raw/provenance/device_logs/esp32-035.log",
+      "sha256": "e2f8faa238542b83e5b439031383755e04244c6b839c41d36e9b349f9153d4ef",
+      "size_bytes": 930502,
+      "zip_entry": "raw/provenance/device_logs/esp32-035.log"
+    },
+    {
+      "canonical_path": "V10/analysis/data/raw/raw/provenance/device_logs/esp32-009.log",
+      "sha256": "9792b966679db35942772b8f739e6ea896f5af70c5b72898fc1cacbcf7d9b168",
+      "size_bytes": 930532,
+      "zip_entry": "raw/provenance/device_logs/esp32-009.log"
+    },
+    {
+      "canonical_path": "V10/analysis/data/raw/raw/provenance/device_logs/esp32-023.log",
+      "sha256": "4efa8e1a5c9cdbf0ed940398572f2ef5beb9c2b35e0219ec4800540983858fee",
+      "size_bytes": 930545,
+      "zip_entry": "raw/provenance/device_logs/esp32-023.log"
+    },
+    {
+      "canonical_path": "V10/analysis/data/raw/raw/provenance/device_logs/esp32-037.log",
+      "sha256": "e4b1e03bb238c2104fbdbf755417306309f6cac35db1f8403ce8629e1ec6f7f3",
+      "size_bytes": 930492,
+      "zip_entry": "raw/provenance/device_logs/esp32-037.log"
+    },
+    {
+      "canonical_path": "V10/analysis/data/raw/raw/provenance/device_logs/esp32-036.log",
+      "sha256": "d7065d6f29697e6df6c61dc3833770a1cdf836411610ed5dd75f333fb30aa859",
+      "size_bytes": 930510,
+      "zip_entry": "raw/provenance/device_logs/esp32-036.log"
+    },
+    {
+      "canonical_path": "V10/analysis/data/raw/raw/provenance/device_logs/esp32-022.log",
+      "sha256": "eb6113450a2d5a8942f8db80081aee08ad06246e95d2d768491fc04180e7031b",
+      "size_bytes": 930510,
+      "zip_entry": "raw/provenance/device_logs/esp32-022.log"
+    },
+    {
+      "canonical_path": "V10/analysis/data/raw/raw/provenance/device_logs/esp32-026.log",
+      "sha256": "fade3a4297ce9b7f99d82c8cc1a7453f4bb47a75797eee8b219d7772eb9cb733",
+      "size_bytes": 930518,
+      "zip_entry": "raw/provenance/device_logs/esp32-026.log"
+    },
+    {
+      "canonical_path": "V10/analysis/data/raw/raw/provenance/device_logs/esp32-032.log",
+      "sha256": "b045150b8ac087224f8d72fd7db8875b79d7cfc27140d38ff3375856f9beb5e1",
+      "size_bytes": 930480,
+      "zip_entry": "raw/provenance/device_logs/esp32-032.log"
+    },
+    {
+      "canonical_path": "V10/analysis/data/raw/raw/provenance/device_logs/esp32-033.log",
+      "sha256": "b7f92cc28957290a6d539331efb3f7247ff6096824adf3b6fa6d55f3db799ebf",
+      "size_bytes": 930553,
+      "zip_entry": "raw/provenance/device_logs/esp32-033.log"
+    },
+    {
+      "canonical_path": "V10/analysis/data/raw/raw/provenance/device_logs/esp32-027.log",
+      "sha256": "cb8946c6e1c1ad51b215978cd093bf4aa3e9f190f4cf7960e3ad926367c10a93",
+      "size_bytes": 930519,
+      "zip_entry": "raw/provenance/device_logs/esp32-027.log"
+    },
+    {
+      "canonical_path": "V10/analysis/data/raw/raw/provenance/device_logs/esp32-031.log",
+      "sha256": "1eb3cb98887d3d4ff22f13b6cf94d44fbeb3af53ac737cef5cb07123d1897f03",
+      "size_bytes": 930548,
+      "zip_entry": "raw/provenance/device_logs/esp32-031.log"
+    },
+    {
+      "canonical_path": "V10/analysis/data/raw/raw/provenance/device_logs/esp32-025.log",
+      "sha256": "f0b09e13f4f76a42938c063eabe1a79f3945508e4cb463d5ab7e35c648465c75",
+      "size_bytes": 930538,
+      "zip_entry": "raw/provenance/device_logs/esp32-025.log"
+    },
+    {
+      "canonical_path": "V10/analysis/data/raw/raw/provenance/device_logs/esp32-019.log",
+      "sha256": "77c7adcb296d08150e8cda671025d31ab451e6669d176bee847e67b09a5cc6cc",
+      "size_bytes": 930536,
+      "zip_entry": "raw/provenance/device_logs/esp32-019.log"
+    },
+    {
+      "canonical_path": "V10/analysis/data/raw/raw/provenance/device_logs/esp32-018.log",
+      "sha256": "fdd5d083c00decc72f46ac39bfea85f067f642d628611769fd1d16e3e089bb2d",
+      "size_bytes": 930527,
+      "zip_entry": "raw/provenance/device_logs/esp32-018.log"
+    },
+    {
+      "canonical_path": "V10/analysis/data/raw/raw/provenance/device_logs/esp32-024.log",
+      "sha256": "1c6c48fd9f775bfd19986031e28013d2e8b0067c30a4082521a237b6a073508d",
+      "size_bytes": 930512,
+      "zip_entry": "raw/provenance/device_logs/esp32-024.log"
+    },
+    {
+      "canonical_path": "V10/analysis/data/raw/raw/provenance/device_logs/esp32-030.log",
+      "sha256": "18ea106aff74cd6766802ec4d246c77d76e31645658601832baadf067f6f7ff4",
+      "size_bytes": 930523,
+      "zip_entry": "raw/provenance/device_logs/esp32-030.log"
+    },
+    {
+      "canonical_path": "V10/analysis/data/raw/raw/provenance/device_logs/esp32-043.log",
+      "sha256": "b77548da4d3be3eb19105b96aabdb4d00938274d4bcd524ee1b7445031d4bf1b",
+      "size_bytes": 930533,
+      "zip_entry": "raw/provenance/device_logs/esp32-043.log"
+    },
+    {
+      "canonical_path": "V10/analysis/data/raw/raw/provenance/device_logs/esp32-042.log",
+      "sha256": "3796b1bea3a8fa091203f004d5f893160ce21d7d0a6bc3f2249241ca71503929",
+      "size_bytes": 930516,
+      "zip_entry": "raw/provenance/device_logs/esp32-042.log"
+    },
+    {
+      "canonical_path": "V10/analysis/data/raw/raw/provenance/device_logs/esp32-040.log",
+      "sha256": "a0727ba078de2a8206783b068cc3709964845255c8b605a0e17bfc860697c9ee",
+      "size_bytes": 930497,
+      "zip_entry": "raw/provenance/device_logs/esp32-040.log"
+    },
+    {
+      "canonical_path": "V10/analysis/data/raw/raw/provenance/device_logs/esp32-041.log",
+      "sha256": "6547913db7f3b80393fe12a1d0d7d65d0abd2730bccf62cc6e44750112a97736",
+      "size_bytes": 930553,
+      "zip_entry": "raw/provenance/device_logs/esp32-041.log"
+    },
+    {
+      "canonical_path": "V10/analysis/data/raw/raw/provenance/device_logs/esp32-045.log",
+      "sha256": "ad7cf73d9c3ef65c6a6fff268ee4cd1e6856f7a4adaba12d0d9b2aadc06b9618",
+      "size_bytes": 930527,
+      "zip_entry": "raw/provenance/device_logs/esp32-045.log"
+    },
+    {
+      "canonical_path": "V10/analysis/data/raw/raw/provenance/device_logs/esp32-050.log",
+      "sha256": "780ba0f1593eda72facba39e9a882fc3d392be43cfc49f36736428b32baa6a18",
+      "size_bytes": 930485,
+      "zip_entry": "raw/provenance/device_logs/esp32-050.log"
+    },
+    {
+      "canonical_path": "V10/analysis/data/raw/raw/provenance/device_logs/esp32-044.log",
+      "sha256": "270783683c7650b56f42d86dfba7ecfc1454b102b0cf4f3fd6c6e8ee4ad53845",
+      "size_bytes": 930507,
+      "zip_entry": "raw/provenance/device_logs/esp32-044.log"
+    },
+    {
+      "canonical_path": "V10/analysis/data/raw/raw/provenance/device_logs/esp32-046.log",
+      "sha256": "a4577c295bd4057b7a3bf904ef82acae0fe07ad47e6f2d2bec00a90a1a50ae6c",
+      "size_bytes": 930526,
+      "zip_entry": "raw/provenance/device_logs/esp32-046.log"
+    },
+    {
+      "canonical_path": "V10/analysis/data/raw/raw/provenance/device_logs/esp32-047.log",
+      "sha256": "842621aeb289a294d9bd79786bfb2c265b5d63a42abfcdb183dae52453966468",
+      "size_bytes": 930512,
+      "zip_entry": "raw/provenance/device_logs/esp32-047.log"
+    },
+    {
+      "canonical_path": "V10/analysis/data/raw/raw/provenance/fabric_ledger/ledger_sample.jsonl",
+      "sha256": "0bd5ab74c87eaf0b5454468a0d79dbbdaa7e497d710858d6100cc048401ec8b2",
+      "size_bytes": 1726094,
+      "zip_entry": "raw/provenance/fabric_ledger/ledger_sample.jsonl"
+    },
+    {
+      "canonical_path": "V10/analysis/data/raw/raw/provenance/gateway_logs/gw-north.log",
+      "sha256": "49725f794675f7554ba65db88283fcdba0fd758327bd6bf4f1b3dec4d0ffcd95",
+      "size_bytes": 6965957,
+      "zip_entry": "raw/provenance/gateway_logs/gw-north.log"
+    },
+    {
+      "canonical_path": "V10/analysis/data/raw/raw/provenance/gateway_logs/gw-east.log",
+      "sha256": "9044d7209bd863653b5d6162beffdbbec91bea8780a666643a8ce3ae1176519e",
+      "size_bytes": 6394752,
+      "zip_entry": "raw/provenance/gateway_logs/gw-east.log"
+    },
+    {
+      "canonical_path": "V10/analysis/data/raw/raw/provenance/gateway_logs/gw-west.log",
+      "sha256": "610e27da7f8d01fa5ec23e775c79ffce4e3340a6eeaed8c43821931e0b443e53",
+      "size_bytes": 6394995,
+      "zip_entry": "raw/provenance/gateway_logs/gw-west.log"
+    },
+    {
+      "canonical_path": "V10/analysis/data/raw/raw/provenance/gateway_logs/gw-south.log",
+      "sha256": "a4543e6d781f75718f231e39490c9a0955aca1e1bc78b52b3653a20f991dc160",
+      "size_bytes": 6965963,
+      "zip_entry": "raw/provenance/gateway_logs/gw-south.log"
+    }
+  ],
+  "zip_sha256": "b5f6b6d6ef1fd66b67dcb35671a1953d86b2cd8fba6f1bfbfc4d236a8ebe9cb8",
+  "zip_size_bytes": 17263100
+}

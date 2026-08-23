@@ -1,0 +1,52 @@
+{
+  "authorization_decisions": 209000,
+  "decision_by_caller_role": {
+    "Admin": 12519,
+    "Agronomist": 12521,
+    "Certifier": 12518,
+    "Farmer": 12521,
+    "Sensor": 146400,
+    "SupplyChain": 12521
+  },
+  "decision_by_operation": {
+    "ControlZone": 8942,
+    "ReadAudit": 8942,
+    "ReadEnvironmentalRecord": 8942,
+    "ReadProvenance": 8942,
+    "ReadSensorData": 8944,
+    "ReadZone": 8943,
+    "WriteSensor": 155345
+  },
+  "decision_count_by_decision": {
+    "allowed": 204140,
+    "denied": 4860
+  },
+  "deployment_end": "2025-09-30 23:59:03+01:00",
+  "deployment_span_days": 61,
+  "deployment_start": "2025-08-01 00:00:00+01:00",
+  "gateway_names": [
+    "gw-east",
+    "gw-north",
+    "gw-south",
+    "gw-west"
+  ],
+  "gateways": 4,
+  "ordinary_denial_rate_pct": 2.325358851674641,
+  "ordinary_denials": 4860,
+  "sensor_readings": 146400,
+  "sensor_writes_per_day_mean": 2400.0,
+  "sensors": 50,
+  "sensors_per_zone": {
+    "East": 12,
+    "North": 13,
+    "South": 13,
+    "West": 12
+  },
+  "zone_names": [
+    "East",
+    "North",
+    "South",
+    "West"
+  ],
+  "zones": 4
+}
